@@ -1,0 +1,13 @@
+{
+  "name": "claude-issue-flow",
+  "owner": {
+    "name": "soulrose"
+  },
+  "plugins": [
+    {
+      "name": "issue-flow",
+      "source": "./",
+      "description": "GitLab and GitHub issue to reviewed merge request / pull request."
+    }
+  ]
+}

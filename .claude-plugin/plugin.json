@@ -1,0 +1,18 @@
+{
+  "name": "issue-flow",
+  "version": "0.1.0",
+  "description": "GitLab and GitHub issue to reviewed merge request / pull request: plan, implement, review, test, submit. Asks before it changes git or the server.",
+  "keywords": [
+    "gitlab",
+    "github",
+    "issue",
+    "merge-request",
+    "pull-request"
+  ],
+  "skills": "./.claude/skills/",
+  "author": {
+    "name": "soulrose"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/soulrose/claude-issue-flow"
+}

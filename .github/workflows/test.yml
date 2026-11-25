@@ -1,0 +1,20 @@
+name: test
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: windows-latest, shell: powershell }
+          - { os: windows-latest, shell: pwsh }
+          - { os: ubuntu-latest, shell: pwsh }
+          - { os: macos-latest, shell: pwsh }
+    runs-on: ${{ matrix.os }}
+    env:
+      FLOW_SHELL: ${{ matrix.shell }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: node test/run.cjs

@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.claude/scripts/issue-flow.cmd issue:*)",
+      "Bash(.claude/scripts/issue-flow.cmd find-change:*)",
+      "Bash(.claude/scripts/issue-flow.cmd feedback:*)",
+      "Bash(.claude/scripts/issue-flow.cmd check:*)",
+      "Bash(.claude/scripts/issue-flow.cmd fingerprint:*)",
+      "Bash(.claude/scripts/issue-flow.cmd related-tests:*)",
+      "Bash(.claude/scripts/issue-flow.cmd review-status:*)",
+      "Bash(.claude/scripts/issue-flow.cmd base-behind:*)",
+      "Bash(pwsh -NoProfile -File .claude/scripts/issue-flow.ps1 issue:*)",
+      "Bash(pwsh -NoProfile -File .claude/scripts/issue-flow.ps1 find-change:*)",
+      "Bash(pwsh -NoProfile -File .claude/scripts/issue-flow.ps1 feedback:*)",
+      "Bash(pwsh -NoProfile -File .claude/scripts/issue-flow.ps1 check:*)",
+      "Bash(pwsh -NoProfile -File .claude/scripts/issue-flow.ps1 fingerprint:*)",
+      "Bash(pwsh -NoProfile -File .claude/scripts/issue-flow.ps1 related-tests:*)",
+      "Bash(pwsh -NoProfile -File .claude/scripts/issue-flow.ps1 review-status:*)",
+      "Bash(pwsh -NoProfile -File .claude/scripts/issue-flow.ps1 base-behind:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch --show-current)",
+      "Bash(git rev-parse:*)",
+      "Bash(git merge-base:*)",
+      "Bash(git ls-remote:*)"
+    ],
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git push --force-with-lease:*)",
+      "Bash(git commit --no-verify:*)",
+      "Bash(git push --no-verify:*)"
+    ]
+  }
+}

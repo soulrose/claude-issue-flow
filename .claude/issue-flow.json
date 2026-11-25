@@ -1,0 +1,16 @@
+{
+  "provider": "",
+  "host": "",
+  "baseBranch": "",
+  "defaultReviewer": "",
+  "labels": {
+    "prefix": "Status",
+    "inProgress": "Status: In progress",
+    "awaitingReview": "Status: Awaiting review"
+  },
+  "tests": {
+    "related": "",
+    "all": "",
+    "issue": ""
+  }
+}
